@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css" />
-  </head>
-  <body>
-    <h1 class="text-red-800 font-bold">Hello world</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="flex flex-row items-center gap-10">
+      
+      <!-- Левая часть: текст -->
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+          Smart Web <br> Design Agency
+        </h1>
+        <p class="mt-4 text-gray-500 max-w-md">
+          We will provide best web design and business development service clients expectation and satisfaction guarantee.
+        </p>
+        <button class="mt-6 bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition">
+          Free consultation
+        </button>
+      </div>
+
+      <!-- Правая часть: картинка -->
+      <div class="flex-1 flex justify-center md:justify-end">
+        <img src="./vector.png" alt="Web Design Illustration" class="max-w-sm w-full h-auto">
+      </div>
+
+    </div>
+  </section>
+
+</body>
 </html>
