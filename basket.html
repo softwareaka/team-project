@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFood - Basket</title>
+    <link rel="stylesheet" href="./basket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evb5p8nJMEQvOr1IQMXQM7RhE8DZBW5MKhokCbbe9LoSfLEP8gPEJzPQQSGQJ0CxkABCj1V9Jf3jJd6zPJJKsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <h1 class="logo">
+          <a href="../index.html"><span>E</span>Food</a>
+        </h1>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="#">Service</a>
+          <a href="#">Top cities</a>
+          <a href="#">Contract</a>
+        </nav>
+        <button class="sign-up-btn">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="page-title">
+        <svg
+          class="basket-icon"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+          ></path>
+        </svg>
+        <h2>Your Basket</h2>
+      </div>
+
+      <div class="content-grid">
+        <!-- Basket Items Table -->
+        <div class="basket-table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="basket-items">
+              <!-- Basket items will be rendered here -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <div class="summary-items">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Delivery Fee</span>
+              <span>$5.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax (10%)</span>
+              <span id="tax">$0.00</span>
+            </div>
+            <div class="summary-total">
+              <span>Total</span>
+              <span id="total">$0.00</span>
+            </div>
+          </div>
+
+          <button class="checkout-btn">Proceed to Checkout</button>
+          <button
+            class="continue-shopping-btn"
+            onclick="window.location.href='../index.html'"
+          >
+            Continue Shopping
+          </button>
+
+          <div class="promo-text">
+            🎉 Get discounts of up to 50% on your first order!
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./basket.js"></script>
+  </body>
+</html>

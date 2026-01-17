@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- <header>
+      <button class="header-menu"><i class="fa-solid fa-bars"></i></button>
+
+      <div class="modal-container">
+        <div class="modal"></div>
+      </div>
+
+
+    </header> -->
+
+    <header>
+      <img src="./images/EFood.png" alt="Efood icon image" />
+
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#">Home</a></li>
+          <li class="nav-list__item"><a href="#service">Service</a></li>
+          <li class="nav-list__item"><a href="#cities">Top cities</a></li>
+          <li class="nav-list__item"><a href="#contract">Contract</a></li>
+          <li>
+            <img
+              class="search-icon"
+              src="./icons/Search.svg"
+              alt="Search icon image"
+            />
+          </li>
+          <li>
+            <a class="add-icon" href="./addProduct/addProduct.html">
+              <i class="fa-solid fa-plus"></i>
+            </a>
+          </li>
+          <li>
+            <span class="total-basket">0</span>
+            <a href="./basket.html"
+              ><img
+                class="basket-icon"
+                src="./icons/Buy.svg"
+                alt="Basket icon image"
+            /></a>
+          </li>
+          <li><button class="nav-btn">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="category">
+      <h2 class="category-title">Our Popular <span>Category</span></h2>
+
+      <ul class="category-list">
+        <li class="category-list__item">
+          <button onclick="filterCat('burger')">Burger</button>
+        </li>
+        <li class="category-list__item">
+          <button onclick="filterCat('pizza')">Pizza</button>
+        </li>
+        <li class="category-list__item">
+          <button onclick="filterCat('sandwich')">Sandwich</button>
+        </li>
+        <li class="category-list__item">
+          <button onclick="filterCat('asian')">Asian Food</button>
+        </li>
+        <li class="category-list__item">
+          <button onclick="filterCat('setMenu')">Set Menu</button>
+        </li>
+      </ul>
+
+      <ul class="food-list"></ul>
+    </section>
+
+    <script src="./srcipt.js"></script>
+  </body>
+</html>

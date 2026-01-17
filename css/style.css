@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: inherit;
+}
+
+body {
+  background-color: rgba(239, 239, 239, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 54px 135px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.nav-list__item > a {
+  color: rgba(54, 56, 83, 1);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav-btn,
+.add-basket {
+  border: none;
+  border-radius: 5px;
+  padding: 14px 28px;
+  background-color: rgba(255, 122, 80, 1);
+
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.add-icon {
+  font-size: 22px;
+}
+
+.category {
+  padding: 94px 135px;
+}
+
+.category-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.category-title span {
+  color: rgba(255, 122, 80, 1);
+}
+
+.category-list {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-list__item > button {
+  width: 210px;
+  padding: 15px 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 122, 80, 1);
+  color: white;
+
+  font-size: 20px;
+}
+
+.food-item {
+  width: 145px;
+  padding: 10px 32px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  gap: 10px;
+
+  font-size: 15px;
+}
+
+.food-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-item button {
+  padding: 7px 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 122, 80, 1);
+  color: white;
+}
+
+.header-menu {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.modal-container {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  left: 0;
+  transform: translateX(-370px);
+
+  transition: 0.6s;
+}
+
+.modal {
+  height: 90vh;
+  position: absolute;
+  width: 340px;
+  background-color: rgb(192, 190, 190);
+}
